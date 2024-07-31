@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Page</title>
+  <script>
+     const redirect = () =>{
+        window.location.href = 'http://localhost:3000/new'
+     }
+  </script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="app-cont">
+    <header>Mini Message Board!</header>
+    <% messages.forEach(message => { %>
+      <section>
+        <div class="author">Author: <%= message.user %></div>
+        <div class="message">Message: <%= message.text %></div>
+        <div class="date">Date: <%= message.added %></div>
+      </section>
+    <% }) %>
+    <button onclick="redirect()">Add message!</button>
+  </div>
+</body>
+</html>
