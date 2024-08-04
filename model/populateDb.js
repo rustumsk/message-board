@@ -29,4 +29,4 @@ async function main() {
     console.log('Done');
 }
 
-main();
+module.exports = {main};

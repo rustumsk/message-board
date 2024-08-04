@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const {indexRoute} = require('./routes/indexRoute');
+const {main} = require('./model/populateDb');
 require('dotenv').config();
-
+main();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
@@ -13,7 +14,6 @@ const assetsPath = path.join(__dirname, "public");
 app.use(express.static(assetsPath));
 
 app.use(express.urlencoded({ extended: true }));
-
 
 app.use('/', indexRoute);
 
