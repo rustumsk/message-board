@@ -1,8 +1,8 @@
 const { Client } = require('pg');
 
 require('dotenv').config();
-const connect = process.env.CONNECTION;
-
+// const connect = process.env.DEV_CONNECT;
+const connect = process.env.PROD_CONNECT;
 const SQL = `
 CREATE TABLE IF NOT EXISTS users (
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
