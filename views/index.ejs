@@ -16,9 +16,9 @@
     <header>Mini Message Board!</header>
     <% messages.forEach(message => { %>
       <section>
-        <div class="author">Author: <%= message.user %></div>
-        <div class="message">Message: <%= message.text %></div>
-        <div class="date">Date: <%= message.added %></div>
+        <div class="author">Author: <%= message.username %></div>
+        <div class="message">Message: <%= message.message %></div>
+        <div class="date">Date: <%= message.date %></div>
       </section>
     <% }) %>
     <button onclick="redirect()">Add message!</button>
