@@ -1,3 +1,3 @@
 # message-board
-created using expressjs
-Live preview here: https://message-board-russ.adaptable.app/
+created using expressjs and postgresql.
+Live preview here: [[https://message-board-russ.adaptable.app/]()](https://message-board-rustum.adaptable.app/)
